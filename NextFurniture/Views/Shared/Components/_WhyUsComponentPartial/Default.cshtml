@@ -1,0 +1,28 @@
+﻿@model List<NextFurniture.Models.DAL.Entities.WhyUs>
+<div class="py-vh-5 w-100 overflow-hidden" id="services">
+    <div class="container">
+        @foreach(var item in Model)
+        {
+        <div class="row d-flex justify-content-end">
+            <div class="col-lg-8" data-aos="fade-down"><h2 class="display-6">@item.HeadTitle</h2></div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <span class="h5 fw-lighter">01.</span>
+                <h3 class="py-5 border-top border-dark">@item.ReasonTitle1</h3>
+                <p>@item.ReasonDescription1</p>                
+            </div>
+            <div class="col-md-6 col-lg-4 py-vh-4 pb-0" data-aos="fade-up" data-aos-delay="400">
+                <span class="h5 fw-lighter">02.</span>
+                <h3 class="py-5 border-top border-dark">@item.ReasonTitle2</h3>
+                <p>@item.ReasonDescription2</p>                
+            </div>
+            <div class="col-md-6 col-lg-4 py-vh-6 pb-0" data-aos="fade-up" data-aos-delay="600">
+                <span class="h5 fw-lighter">03.</span>
+                <h3 class="py-5 border-top border-dark">@item.ReasonTitle3</h3>
+                <p>@item.ReasonDescription3</p>                
+            </div>
+        </div>
+        }
+    </div>
+</div>
