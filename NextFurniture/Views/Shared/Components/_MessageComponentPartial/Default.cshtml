@@ -1,0 +1,37 @@
+﻿<div class="container py-vh-3 border-top" data-aos="fade" data-aos-delay="200" id="messageArea">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-8 text-center">
+            <h3 class="fs-2 fw-light">
+                Formu Doldurarak Bizimle<span class="fw-bold">
+                    İletişime
+                </span>
+                Geçebilirsiniz.
+            </h3>
+        </div>
+        <div class="col-12 col-lg-8 text-center" >
+            <div class="grouped-inputs border bg-light p-2">
+                <div class="row">
+                    <form asp-action="SendMessage" method="post">
+                        <div class="mb-3">
+                            <label for="NameSurname" class="form-label">Ad Soyad:</label>
+                            <input type="text" class="form-control" name="NameSurname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Mail" class="form-label">Mail:</label>
+                            <input type="email" class="form-control" name="Mail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Subject" class="form-label">Konu:</label>
+                            <input type="text" class="form-control" name="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="FullMessage" class="form-label">Mesajınız:</label>
+                            <textarea name="FullMessage" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

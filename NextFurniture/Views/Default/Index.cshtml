@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html class="h-100" lang="tr">
+@await Component.InvokeAsync("_HeaderComponentPartial");
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+    @await Component.InvokeAsync("_NavbarComponentPartial");
+    <main>
+        @await Component.InvokeAsync("_BannerComponentPartial");
+        @await Component.InvokeAsync("_WhyUsComponentPartial");
+        @await Component.InvokeAsync("_AboutComponentPartial");
+        @await Component.InvokeAsync("_CommentComponentPartial");
+        @await Component.InvokeAsync("_LittleServicesComponentPartial");
+        @await Component.InvokeAsync("_ContactComponentPartial");
+        @await Component.InvokeAsync("_MessageComponentPartial");
+    </main>
+    @await Component.InvokeAsync("_FooterComponentPartial");
+</body>
+</html>
